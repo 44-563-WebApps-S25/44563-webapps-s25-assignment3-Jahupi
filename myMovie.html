@@ -52,5 +52,22 @@
                 <td>44</td>
             </tr>
         </table>
+
+        <hr>
+        <h2>Code Snippet</h2>
+        <p>This is a code snippet about storing json in a file, it can be found <a href="https://shared.code.pieces.app/?compressed=eyJiYXNlIjoiaHR0cHM6Ly9ub2RlanMucGllY2VzLmNsb3VkIiwic2hhcmUiOiI5NGQzYTFjNC05N2I4LTRiZTItOTczMC04ZjlmZjM0MjkwYTQiLCJhc3NldCI6ImNhYjc1YmRlLWRiMzEtNDBkOS1hNmQ1LWZjZjYxM2Y2OWRhMSIsIm5hbWUiOiJQaWVjZXMgVGVhbSIsInRpdGxlIjoiU3RvcmUgSlNPTiBpbiBhIEZpbGUiLCJkZXNjcmlwdGlvbiI6IkdpdmVuIGEgZGF0YSBvYmplY3QsIGNvbnZlcnQgdGhlIG9iamVjdCB0byBhIEpTT04gc3RyaW5nIGFuZCBzdG9yZSBpdCBpbiBhIGZpbGUgd2l0aCB0aGUgc3BlY2lmaWVkIHBhdGguIEZyb20gVGhlIFBpZWNlcyBOb2RlLmpzIENvbGxlY3Rpb24uIiwidXNlciI6eyJzY2hlbWEiOnsibWlncmF0aW9uIjowLCJzZW1hbnRpYyI6Ik1BSk9SXzBfTUlOT1JfMF9QQVRDSF8xIn0sInBpY3R1cmUiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS0vQU9oMTRHakdUaHJWRWRkVGptaFhtQ0JaRWl5ajMtVjAyRDJtZE53c2xLYzg9czk2LWMiLCJlbWFpbCI6Im5vZGVqcy5jb2xsZWN0aW9uQHBpZWNlcy5hcHAiLCJjcmVhdGVkIjp7InZhbHVlIjoiMjAyMi0wNi0yM1QxODoyODowNy42NTBaIiwicmVhZGFibGUiOiIzIHllYXJzIGFnbyJ9LCJ1cGRhdGVkIjp7InZhbHVlIjoiMjAyMi0wNi0yM1QxODoyODowOC4zMjBaIiwicmVhZGFibGUiOiIzIHllYXJzIGFnbyJ9LCJpZCI6IjQwYTgxM2E0LWI0YzItNGQzNy05YTUzLWEwNjdlMzQyMjcwMSIsIm5hbWUiOiJQaWVjZXMgVGVhbSIsImFlc3RoZXRpY3MiOnsidGhlbWUiOnsiZGFyayI6dHJ1ZX0sImZvbnQiOnsic2l6ZSI6MTZ9fSwiYWxsb2NhdGlvbiI6eyJzY2hlbWEiOnsibWlncmF0aW9uIjowLCJzZW1hbnRpYyI6Ik1BSk9SXzBfTUlOT1JfMF9QQVRDSF8xIn0sImlkIjoiNDBhODEzYTQtYjRjMi00ZDM3LTlhNTMtYTA2N2UzNDIyNzAxIiwidXNlciI6IjQwYTgxM2E0LWI0YzItNGQzNy05YTUzLWEwNjdlMzQyMjcwMSIsInVybHMiOnsiYmFzZSI6eyJzdGF0dXMiOiJSVU5OSU5HIiwidXJsIjoiaHR0cHM6Ly91c2VyLTQwYTgxM2E0LWI0YzItNGQzNy05YTUzLWEwNjdlMzQyMjcwMS1maGNtYmhla2xxLXVjLmEucnVuLmFwcCJ9LCJpZCI6eyJzdGF0dXMiOiJSVU5OSU5HIiwidXJsIjoiaHR0cHM6Ly80MGE4MTNhNC1iNGMyLTRkMzctOWE1My1hMDY3ZTM0MjI3MDEucGllY2VzLmNsb3VkIn0sInZhbml0eSI6eyJzdGF0dXMiOiJSVU5OSU5HIiwidXJsIjoiaHR0cHM6Ly9ub2RlanMucGllY2VzLmNsb3VkIn19LCJzdGF0dXMiOnsiY2xvdWQiOiJSVU5OSU5HIn0sInByb2plY3QiOiJydW50aW1lLXVzZXItY2xvdWQtZ3JvdXAtMCIsInVwZGF0ZWQiOnsidmFsdWUiOiIyMDIyLTA2LTIzVDE4OjI4OjU5LjkzNTkxNVoiLCJyZWFkYWJsZSI6IjMgeWVhcnMgYWdvIn0sInZlcnNpb24iOiIzLjEuMCJ9fX0=&user=40a813a4-b4c2-4d37-9a53-a067e3422701" target="_blank">here</a></p>
+        
+        <pre>
+            const fileSystem = require('fs')
+
+            const storeData = (data, path) => {
+            try {
+                fileSystem.writeFileSync(path, JSON.stringify(data))
+            } catch (error) {
+                console.error(error)
+                }   
+            }
+        </pre>
+
     </body>
 </html>
